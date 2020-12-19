@@ -1,0 +1,70 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%)
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--Light-Gray);
+}
+
+p{
+    color: var(--Light-Gray);
+}
+
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    border-radius: 15px;
+}
+
+.main-container div{
+    padding: 50px;
+}
+
+.join-container{
+    background-color: white;
+}
+
+.join-container h1{
+    color: var(--Cyan);
+}
+
+.join-container h2{
+    color: var(--Bright-Yellow);
+}
+
+.price-container{
+    background-color: var(--Cyan);
+    display: inline-block;
+    width: 50vh;
+}
+
+.description-container{
+    background-color: var(--Cyan);
+    display: inline-block;
+    width: 50vh;
+}
+
+
+
+
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
