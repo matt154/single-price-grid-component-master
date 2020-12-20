@@ -1,68 +1,81 @@
 :root {
     --Cyan: hsl(179, 62%, 43%);
+    --off-Cyan: hsl(179, 62%, 43%, 0.7);
     --Bright-Yellow: hsl(71, 73%, 54%);
     --Light-Gray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%)
 }
 
-body{
+body {
     font-family: 'Karla', sans-serif;
     background-color: var(--Light-Gray);
+    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-p{
+h4, p{
+    margin: 1rem 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40vh repeat(2, 1fr) 40vh;
+    grid-template-rows: 10vh repeat(2, 1fr) 10vh;
+}
+
+.primary {
+    color: var(--Cyan);
+}
+
+.secondary {
+    color: var(--Bright-Yellow);
+}
+
+.gray {
     color: var(--Grayish-Blue);
 }
 
-.main-container{
-    border-radius: 15px;
-    display:inline-block;
-    width: 50%;
-    font-size: 0;
+
+.off-white {
+    color: rgba(255, 255, 255, 0.705);
 }
 
-
-.main-container div{
-    padding: 20px;
+.small-text {
+    font-size: 0.9rem;
 }
 
-.join-container{
+.big-text{
+    font-size: 1.5rem;
+}
+
+.container #main-header {
     background-color: white;
-    display:inline-block;
-    font-size: 16px;
+    grid-column: 2 / 4;
+    grid-row: 2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0.1rem 0.1rem 0.9rem 0.2rem rgba(150, 148, 148, 0.25);
+    padding: 50px;
 }
 
-.join-container h3{
-    color: var(--Cyan);
-    font-weight: 700;
+.container #price {
+    background-color: var(--off-Cyan);
+    grid-column: 2;
+    grid-row: 3;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0.1rem 0.1rem 0.9rem 0.2rem rgba(150, 148, 148, 0.25);
+    color: #fff;
 }
 
-.join-container h5{
-    color: var(--Bright-Yellow);
-    font-weight: 700;
-}
 
-.price-container{
-    display: inline-block;
-    width: 50%;
-    font-size: 16px;
+.container #Why-us {
     background-color: var(--Cyan);
+    grid-column: 3;
+    grid-row: 3;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0.1rem 0.1rem 0.9rem 0.2rem rgba(150, 148, 148, 0.25);
 }
 
-.price-container h4{
-    color: var(--Light-Gray);
-}
-
-.description-container{
-    display: inline-block;
-    width: 50%;
-    background-color: var(--Cyan);
-    font-size: 16px;
-}
-
-.description-container h4{
-    color: var(--Light-Gray);
-}
 
 
 
